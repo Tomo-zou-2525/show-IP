@@ -5,6 +5,7 @@ import App from "./App";
 import router from "./router.js";
 //axios追加
 import axios from "axios";
+import "./assets/scss/styles.scss";
 
 Vue.config.productionTip = false;
 

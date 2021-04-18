@@ -28,9 +28,12 @@ export default {
         .get("https://httpbin.org/get")
         //成功時、
         .then(response => {
+          //ipに取得したデータを代入
           this.ip = response.data.origin;
         })
+        //失敗時
         .catch(reason => {
+          //文字列をIPに代入
           this.ip = "IPの取得に失敗しました";
         });
     }

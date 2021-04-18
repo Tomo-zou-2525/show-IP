@@ -3,8 +3,13 @@
 import Vue from "vue";
 import App from "./App";
 import router from "./router.js";
+//axios追加
+import axios from "axios";
 
 Vue.config.productionTip = false;
+
+//axios追加
+Vue.prototype.$axios = axios;
 
 /* eslint-disable no-new */
 new Vue({
